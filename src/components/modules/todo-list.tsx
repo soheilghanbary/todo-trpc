@@ -17,7 +17,7 @@ export default function TodoList() {
 
   return (
     <ul className="flex flex-col gap-2 mt-4">
-      {data?.map((todo, i) => (
+      {data?.map((todo: any, i) => (
         <TodoItem key={todo.id} {...todo} index={i + 1} />
       ))}
     </ul>
@@ -31,7 +31,7 @@ const TodoItem = ({
   published,
   updatedAt,
   index,
-}: TodoItemProps) => {
+}: any) => {
   const completeMutation = trpc.todos.done.useMutation();
   const deleteMutation = trpc.todos.delete.useMutation();
   const utils = trpc.useContext();
