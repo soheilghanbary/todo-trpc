@@ -17,7 +17,7 @@ export default function TodoList() {
 
   return (
     <ul className="flex flex-col gap-2 mt-4">
-      {data?.map((todo: any, i) => (
+      {data?.map((todo: any, i: any) => (
         <TodoItem key={todo.id} {...todo} index={i + 1} />
       ))}
     </ul>
