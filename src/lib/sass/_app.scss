@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --body-color: #475569;
+  --heading-color: #1e293b;
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #f1f5f9;
+
+  --line-color: #e2e8f0;
+
+  --shadow-md: 0 4px 6px -1px #e2e8f0, 0 2px 4px -2px #e2e8f0;
+  --shadow-lg: 0 10px 15px -3px #e2e8f0, 0 4px 6px -4px #e2e8f0;
+
+  --rounded-md: 3em;
+  --rounded-lg: 5em;
+}
+
+.dark {
+  --body-color: #CBCCD2;
+  --heading-color: #ffffff;
+
+  --bg-primary: #151522;
+  --bg-secondary: #1b1b30;
+
+  --line-color: #2b2b4b;
+
+  --shadow-md: 0 4px 6px -1px #1a1a2d, 0 2px 4px -2px #212139;
+  --shadow-lg: 0 10px 15px -3px #212139, 0 4px 6px -4px #212139;
+}
+
+body {
+  color: var(--body-color);
+  font-family: "Nunito", sans-serif;
+  background-color: var(--bg-primary);
+}

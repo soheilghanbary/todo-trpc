@@ -1,0 +1,15 @@
+.todo-actions {
+    @apply flex items-center gap-3;
+
+    button {
+        @apply w-9 h-9 border flex justify-center items-center p-2 rounded-full active:scale-90 duration-200 hover:ring-2;
+    }
+}
+
+.check-button {
+    @apply bg-teal-500 text-white border-teal-300 ring-teal-200;
+}
+
+.delete-button {
+    @apply bg-rose-500 text-white border-rose-300 ring-rose-200;
+}
